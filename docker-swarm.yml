@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  client:
+    image: albertxp/ta2:client
+    ports:
+      - "80:80"
+    environment:
+      - VUE_APP_API_URL=http://35.207.254.40:443/api
+      - VUE_APP_FILE_URL=http://35.207.254.40:443/uploads/
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+
+  server:
+    image: albertxp/ta2:server
+    ports:
+      - "443:3000"
+    environment:
+      - DATABASE=mongodb://10.132.0.2:27017/THOMAS
+      - CORS_ORIGIN=http://35.207.254.40
+      - NODE_ENV=development
+      - JWT_SECRET=secret-token-rahasia-gw
+      - PORT=3000
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
