@@ -103,22 +103,32 @@ MIT
 - Built with Node.js, Express, MongoDB, Next.js, React, Tailwind CSS
 - Icons by Lucide
 
-## Screenshots
+## 📸 Screenshots
 
-Home page:
-![Home](screenshots/home.png)
+<div align="center">
 
-Achievements page:
-![achievement](screenshots/achievement.png)
+### 🏠 Home
 
-Gallery page:
-![gallery](screenshots/gallery.png)
+<img src="screenshots/home.png" alt="Home" width="600">
 
-News Page:
-![news](screenshots/news.png)
+### 🏆 Achievements
 
-News detail page:
-![news-detail](screenshots/news-detail.png)
+<img src="screenshots/achievement.png" alt="Achievements" width="600">
 
-Admin Dashboard Page:
-![admin dashboard](screenshots/admin-dashboard.png)
+### 🖼️ Gallery
+
+<img src="screenshots/gallery.png" alt="Gallery" width="600">
+
+### 📰 News
+
+<img src="screenshots/news.png" alt="News" width="600">
+
+### 🗞️ News Detail
+
+<img src="screenshots/news-detail.png" alt="News Detail" width="600">
+
+### ⚙️ Admin Dashboard
+
+<img src="screenshots/admin-dashboard.png" alt="Admin Dashboard" width="600">
+
+</div>
