@@ -105,4 +105,20 @@ MIT
 
 ## Screenshots
 
+Home page:
 ![Home](screenshots/home.png)
+
+Achievements page:
+![achievement](screenshots/achievement.png)
+
+Gallery page:
+![gallery](screenshots/gallery.png)
+
+News Page:
+![news](screenshots/news.png)
+
+News detail page:
+![news-detail](screenshots/news-detail.png)
+
+Admin Dashboard Page:
+![admin dashboard](screenshots/admin-dashboard.png)
