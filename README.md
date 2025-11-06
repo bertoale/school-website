@@ -1,6 +1,7 @@
-# TA2 School Management Platform
+# School Management Platform
 
 ## Overview
+
 This repository contains a fullstack school management platform built with Node.js (Express, MongoDB) for the backend (`server` folder) and Next.js (React) for the frontend (`client_next` folder). The platform supports features such as admin dashboard, school news, achievements, facilities, extracurriculars, gallery, announcements, registration, and more.
 
 ---
@@ -8,6 +9,7 @@ This repository contains a fullstack school management platform built with Node.
 ## Folder Structure
 
 - **server/**
+
   - Node.js Express backend
   - MongoDB database
   - RESTful API endpoints for all school features
@@ -29,10 +31,12 @@ This repository contains a fullstack school management platform built with Node.
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js >= 18
 - MongoDB (local or Atlas)
 
 ### Installation
+
 1. Clone this repository:
    ```bash
    git clone <repo-url>
@@ -54,6 +58,7 @@ This repository contains a fullstack school management platform built with Node.
    ```
 
 ### Running Development
+
 - Start backend:
   ```bash
   cd server
@@ -70,6 +75,7 @@ This repository contains a fullstack school management platform built with Node.
 ---
 
 ## Features
+
 - Admin authentication & dashboard
 - CRUD for Prestasi, Fasilitas, Berita, Ekstrakurikuler, Galeri, Pengumuman, Tautan, Pendaftaran
 - File/image upload (multer)
@@ -80,16 +86,23 @@ This repository contains a fullstack school management platform built with Node.
 ---
 
 ## Deployment
+
 - Docker support (see `docker-compose.yml`)
 - Environment variables for production
 
 ---
 
 ## License
+
 MIT
 
 ---
 
 ## Credits
+
 - Built with Node.js, Express, MongoDB, Next.js, React, Tailwind CSS
 - Icons by Lucide
+
+## Screenshots
+
+![Home](screenshots/home.png)
