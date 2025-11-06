@@ -72,7 +72,7 @@ export default function Navigation() {
           <Link href="" className="flex items-center space-x-2">
             <School className="h-8 w-8 text-blue-600" />
             <span className="font-bold text-xl text-white">
-              SMAK N 1 Kebangsaan
+              SMAK Thomas Aquino
             </span>
           </Link>
           {/* Desktop Menu */}

@@ -1,16 +1,14 @@
 "use client";
 import {
-  ArrowBigRight,
-  BookText,
-  Boxes,
-  Calendar,
-  Guitar,
-  Home,
-  Inbox,
-  Search,
-  Settings,
-  ShoppingCart,
+  LayoutDashboard,
+  FileText,
+  Newspaper,
   Medal,
+  Building2,
+  Drama,
+  Image,
+  Megaphone,
+  Link,
   LogOut,
 } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -32,48 +30,47 @@ const items = [
   {
     title: "Dashboard",
     url: "/admin/dashboard",
-    icon: Home,
+    icon: LayoutDashboard, // ikon utama dashboard
   },
   {
     title: "Pendaftaran",
     url: "/admin/pendaftaran",
-    icon: BookText,
+    icon: FileText, // ikon dokumen/formulir
   },
   {
     title: "Berita",
     url: "/admin/berita",
-    icon: Boxes,
+    icon: Newspaper, // ikon koran/berita
   },
   {
     title: "Prestasi",
     url: "/admin/prestasi",
-    icon: Medal,
+    icon: Medal, // ikon medali/prestasi
   },
-
   {
     title: "Fasilitas",
     url: "/admin/fasilitas",
-    icon: Inbox,
+    icon: Building2, // ikon gedung/fasilitas sekolah
   },
   {
     title: "Ekstrakurikuler",
     url: "/admin/ekstrakurikuler",
-    icon: Inbox,
+    icon: Drama, // ikon topeng/drama/mask untuk kegiatan
   },
   {
     title: "Galeri",
     url: "/admin/galeri",
-    icon: Inbox,
+    icon: Image, // ikon gambar/foto
   },
   {
     title: "Pengumuman",
     url: "/admin/pengumuman",
-    icon: Inbox,
+    icon: Megaphone, // ikon pengeras suara/pengumuman
   },
   {
     title: "Tautan PPDB",
     url: "/admin/tautan",
-    icon: Inbox,
+    icon: Link, // ikon rantai/link
   },
 ];
 
@@ -99,24 +96,25 @@ export function AppSidebar() {
       <Sidebar>
         <SidebarContent>
           <SidebarGroup>
-            <SidebarGroupLabel>Nexpress Shop</SidebarGroupLabel>
+            <SidebarGroupLabel>MENU</SidebarGroupLabel>
+
             <SidebarGroupContent>
               <SidebarMenu>
                 {items.map((item) => {
                   const isActive =
                     pathname === item.url ||
                     pathname?.startsWith(item.url + "/");
+
                   return (
                     <SidebarMenuItem key={item.title}>
                       <SidebarMenuButton asChild>
                         <a
                           href={item.url}
-                          className={
-                            `flex items-center gap-2 px-3 py-2 rounded-md transition-colors duration-150 ` +
-                            (isActive
+                          className={`flex items-center gap-2 px-3 py-2 rounded-md transition-colors duration-150 ${
+                            isActive
                               ? "text-teal-700 bg-teal-50 font-medium"
-                              : "text-gray-700 hover:text-teal-700 hover:bg-gray-50")
-                          }
+                              : "text-gray-700 hover:text-teal-700 hover:bg-gray-50"
+                          }`}
                         >
                           <item.icon className="h-5 w-5" />
                           <span>{item.title}</span>
@@ -126,11 +124,13 @@ export function AppSidebar() {
                   );
                 })}
               </SidebarMenu>
+
               <Button
                 variant="outline"
                 onClick={handleLogout}
-                className="w-full flex items-center space-x-2 justify-start text-red-600 border-red-200 hover:bg-red-50"
+                className="w-full flex items-center justify-start gap-2 text-red-600 border-red-200 hover:bg-red-50 mt-4"
               >
+                <LogOut className="h-5 w-5" />
                 <span>Logout</span>
               </Button>
             </SidebarGroupContent>

@@ -144,7 +144,7 @@ export default function EkstrakurikulerPage() {
   };
 
   return (
-    <div className="container mx-auto py-8 px-4 min-h-screen bg-gradient-to-br from-teal-50 via-white to-teal-100">
+    <div className="container mx-auto py-8 px-4 min-h-screen ">
       <h1 className="text-3xl font-bold text-center mb-8 text-teal-700 drop-shadow-sm tracking-tight">
         Ekstrakurikuler Sekolah
       </h1>

@@ -210,7 +210,7 @@ export default function BeritaPage() {
   return (
     <div className="container mx-auto py-6 px-4">
       <div className="mb-6">
-        <h1 className="text-3xl font-bold text-center mb-4">List Berita</h1>
+        <h1 className="text-3xl font-bold text-center mb-4">Berita Sekolah</h1>
         <div className="flex justify-end">
           <Button onClick={openDialog} className="flex items-center gap-2">
             <Plus className="h-4 w-4" />

@@ -75,9 +75,9 @@ export default function TautanPage() {
   };
 
   return (
-    <div className="container mx-auto py-8 px-4 min-h-screen bg-gradient-to-br from-indigo-50 via-white to-indigo-100">
-      <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700 drop-shadow-sm tracking-tight">
-        Tautan Sekolah
+    <div className="container mx-auto py-8 px-4 min-h-screen ">
+      <h1 className="text-3xl font-bold text-center mb-8 text-teal-700 drop-shadow-sm tracking-tight">
+        Tautan PPDB Sekolah
       </h1>
 
       {alert && (
@@ -95,9 +95,8 @@ export default function TautanPage() {
       )}
 
       <Table className="bg-white shadow-md rounded-lg overflow-hidden">
-        <TableCaption>Tautan utama sekolah</TableCaption>
         <TableHeader>
-          <TableRow className="bg-indigo-100">
+          <TableRow className="bg-teal-100">
             <TableHead className="p-4 text-left">Tautan</TableHead>
             <TableHead className="p-4 text-center w-[160px]">Aksi</TableHead>
           </TableRow>
@@ -138,7 +137,7 @@ export default function TautanPage() {
               <Input
                 value={tautan}
                 onChange={(e) => setTautan(e.target.value)}
-                placeholder="Contoh: /beranda atau https://smakn1kebangsaan.sch.id"
+                placeholder="Contoh: /beranda atau https://lorem.sch.id"
               />
             </div>
           </div>

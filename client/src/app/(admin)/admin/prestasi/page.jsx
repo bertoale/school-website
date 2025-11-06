@@ -66,7 +66,9 @@ export default function PrestasiPage() {
       const payload = { perlombaan, tingkat, peringkat, tahun };
 
       if (isUpdate) {
-        await api.put(`/api/prestasi/${idUpdate}`, payload, { withCredentials: true });
+        await api.put(`/api/prestasi/${idUpdate}`, payload, {
+          withCredentials: true,
+        });
         showAlert("Prestasi berhasil diperbarui ✅", "success");
       } else {
         await api.post("/api/prestasi", payload, { withCredentials: true });
@@ -114,7 +116,7 @@ export default function PrestasiPage() {
   };
 
   return (
-    <div className="container mx-auto py-8 px-4 min-h-screen bg-gradient-to-br from-teal-50 via-white to-teal-100">
+    <div className="container mx-auto py-8 px-4 min-h-screen ">
       <h1 className="text-3xl font-bold text-center mb-8 text-teal-700 drop-shadow-sm tracking-tight">
         Prestasi Sekolah
       </h1>
@@ -145,7 +147,6 @@ export default function PrestasiPage() {
       </div>
 
       <Table className="bg-white shadow-md rounded-lg overflow-hidden">
-        <TableCaption>Daftar Prestasi Sekolah</TableCaption>
         <TableHeader>
           <TableRow className="bg-teal-100">
             <TableHead className="p-4 text-left">Perlombaan</TableHead>

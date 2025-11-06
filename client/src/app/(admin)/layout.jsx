@@ -27,7 +27,7 @@ export default function AdminLayout({ children }) {
             <SidebarTrigger />
             <h1 className="ml-2 font-bold">Admin Dashboard</h1>
           </header>
-          <main className="p-6">{children}</main>
+          <main className="p-6 bg-gradient-to-br bg-teal-50">{children}</main>
         </div>
       </div>
     </SidebarProvider>
